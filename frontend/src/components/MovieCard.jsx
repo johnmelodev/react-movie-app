@@ -1,7 +1,7 @@
-import "./moviecard.css";
+import "../css/MovieCard.css";
 
 const MovieCard = ({ movie }) => {
-  function onFavoriteClick() {
+  function onFavoritesClick() {
     return alert("clicked");
   }
   return (
@@ -9,7 +9,7 @@ const MovieCard = ({ movie }) => {
       <div className="movie-poster">
         <img src={movie.url} alt={movie.title} />
         <div className="movie-overlay">
-          <button className="favorite-btn" onClick={onFavoriteClick}>
+          <button className="Favorites-btn" onClick={onFavoritesClick}>
             S2
           </button>
         </div>
